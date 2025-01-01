@@ -1,14 +1,14 @@
 'use client'
 
 import { useState, useEffect } from 'react';
-import { Alert } from '../types/alert';
-import { generateMockAlert } from '../utils/mockData';
+import { Alert } from '@/types/alert';
+import { generateMockAlert } from '@/utils/mockData';
 import { Button } from "@/components/ui/button";
-import ActivityGraph from '../components/ActivityGraph';
-import AlertTable from '../components/AlertTable';
-import ThreatFeed from '../components/ThreatFeed';
-import AdvancedStats from '../components/AdvancedStats';
-import NetworkAnalysis from '../components/NetworkAnalysis';
+import ActivityGraph from '@/components/ActivityGraph';
+import AlertTable from '@/components/AlertTable';
+import ThreatFeed from '@/components/ThreatFeed';
+import AdvancedStats from '@/components/AdvancedStats';
+import NetworkAnalysis from '@/components/NetworkAnalysis';
 
 export default function Home() {
   const [alerts, setAlerts] = useState<Alert[]>([]);
@@ -35,7 +35,7 @@ export default function Home() {
   }, [isMonitoring]);
 
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
+    <>
       <header className="bg-white dark:bg-gray-800 shadow">
         <div className="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8 flex flex-wrap justify-between items-center">
           <h1 className="text-2xl font-bold text-gray-900 dark:text-white mb-2 sm:mb-0">Advanced Network Monitoring System</h1>
@@ -62,6 +62,7 @@ export default function Home() {
           <AlertTable alerts={alerts} />
         </div>
       </main>
-    </div>
+    </>
   );
 }
+
