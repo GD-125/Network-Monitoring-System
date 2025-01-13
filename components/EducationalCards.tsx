@@ -33,7 +33,7 @@ export default function EducationalCards() {
       {educationalContent.map((content, index) => (
         <Card key={index} className="bg-white shadow-lg hover:shadow-xl transition-shadow duration-300">
           <CardHeader>
-            <CardTitle className="text-lg font-semibold text-blue-600">{content.title}</CardTitle>
+            <CardTitle className="text-lg font-semibold text-pink-600">{content.title}</CardTitle>
           </CardHeader>
           <CardContent>
             <CardDescription>{content.description}</CardDescription>
