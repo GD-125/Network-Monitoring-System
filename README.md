@@ -17,8 +17,6 @@
 13. [Future Enhancements](#future-enhancements)
 14. [Troubleshooting and FAQs](#troubleshooting-and-faqs)
 15. [Changelog](#changelog)
-16. [Contributors](#contributors)
-17. [License](#license)
 
 ### 1. Project Overview
 
@@ -268,11 +266,12 @@ test('renders packet list correctly', () => {
 
 ### 12. Deployment Guide
 
-1. **Prerequisites**:
+ **Prerequisites**:
 
 1. Node.js 18+
 2. npm or yarn
-3. Vercel account
+3. Github account
+4. Vercel account
 
 ### 13. Future Enhancements
 
