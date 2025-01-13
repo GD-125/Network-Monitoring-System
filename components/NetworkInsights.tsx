@@ -59,7 +59,7 @@ export default function NetworkInsights({ packets }: NetworkInsightsProps) {
           description: 'High priority packets',
           icon: Zap,
           value: criticalPackets,
-          trend: criticalPackets > totalPackets * 0.1 ? 'down' : 'up',
+          trend: criticalPackets < totalPackets * 0.1 ? 'down' : 'up',
           iconColor: '#FF5252', // Red
           valueColor: '#FF5252'  // Red
         }
