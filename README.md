@@ -207,7 +207,7 @@ const [isMonitoring, setIsMonitoring] = useState(false)
 ### 8. Styling and UI/UX
 
 - **Responsive Design**: Utilizes Tailwind CSS for a mobile-first, responsive layout.
-- **Dark Mode Support**: Implements a dark mode theme for improved visibility in low-light environments.
+- **Dark Mode Support**: Implements a dark mode theme in **View Analytics & Network Health** sections for improved visibility in low-light environments.
 - **Accessibility**: Ensures WCAG 2.1 compliance for all interactive elements.
 
 
@@ -284,14 +284,14 @@ test('renders packet list correctly', () => {
 
 ### 14. Troubleshooting and FAQs
 
-1. **Q: Why isn't the real-time monitoring updating?**
+**Q1: Why isn't the real-time monitoring updating?**
 A: Ensure that the "Start Monitoring" button is activated and check your internet connection.
-2. **Q: How can I customize the critical level thresholds?**
+**Q2: How can I customize the critical level thresholds?**
 A: Currently, this feature is not available. It's planned for a future release.
 
 
 ### 15. Changelog
 
-- v1.0.0 (2024-01-13): Initial release
-- v1.1.0 (2024-01-20): Added Network Insights feature
-- v1.2.0 (2024-02-01): Improved analytics visualizations
+- v1.0.0 (2024-12-28): Initial release
+- v1.1.0 (2025-01-04): Added Network Insights feature
+- v1.2.0 (2025-02-18): Improved analytics visualizations
